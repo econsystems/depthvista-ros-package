@@ -1,0 +1,5 @@
+<library path="lib/libdepthvista_camera">
+    <class name="depthvista_camera/DepthVistaNodelet" type="depthvista_camera::DepthVistaNodelet" base_class_type="nodelet::Nodelet">
+    <description>This is the main nodelet of the ROS interface for e-con Systems DepthVista Camera.</description>
+    </class>
+</library>

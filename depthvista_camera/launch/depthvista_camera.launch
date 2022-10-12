@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+	<!-- load depthvista nodelet -->
+    <node pkg="nodelet" type="nodelet" name="depthvista_manager"  args="manager" output="screen" />
+       <node pkg="nodelet" type="nodelet" name="depthvista_camera" args="load depthvista_camera/DepthVistaNodelet depthvista_manager" output="screen">
+    </node>
+
+	<node name="camera_transform" pkg="tf" type="static_transform_publisher" args="0 0 0 2.3 0 -2.3 /map /depthvista 100" />
+</launch>
